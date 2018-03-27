@@ -17,7 +17,7 @@ class Solution:
 
         def to_listnode(v):
             l = ListNode(v % 10)
-            next_l = int(v / 10)
+            next_l = v // 10
             l.next = to_listnode(next_l) if next_l else None
             return l
 
